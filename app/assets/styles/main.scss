@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i');
+@import 'materialize-css/sass/materialize.scss';
+@import './_mixins';
+@import './_main-header';
+@import './_showcase';
+@import './_icons';
+@import './_about';
+
+.active-link {
+  color: #d847f1;
+  font-weight: bold;
+}
+
+.container--wide-on-medium-and-up {
+  width: 100%;
+  @include atLarge {
+    width: 70%;
+  }
+}

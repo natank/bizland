@@ -1,3 +1,4 @@
-import materialize from 'materialize-css/dist/js/materialize.js';
-
-console.log("hello from main.js");
+import '../styles/main.scss';
+import 'materialize-css';
+import './fontAwesomeSetup';
+import './materializeSetup';

@@ -5,9 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
-  entry: './js/main.js',
+  mode: 'development',
+  entry: './app/assets/scripts/main.js',
   devServer: {
-    open: true,
     contentBase: path.join(__dirname, 'dist'),
     overlay: true,
     port: 3100
@@ -58,6 +58,10 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ['file-loader']
       }
     ]
   },
@@ -67,7 +71,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: 'index.html'
+      template: './app/index.html'
     }),
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
@@ -76,7 +80,7 @@ module.exports = {
       port: 3000,
       proxy: 'http://localhost:3100/',
       injectCss: true,
-      reload: false
+      reload: true
     })
   ],
   output: {

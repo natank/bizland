@@ -1,0 +1,11 @@
+.icons {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 1rem;
+    @include atSmall {
+      grid-template-columns: 100%;
+    }
+  }
+}
