@@ -1,0 +1,33 @@
+.podcast {
+  position: relative;
+  background-image: linear-gradient(
+      rgba(112, 81, 176, 0.9),
+      rgba(112, 81, 176, 0.9)
+    ),
+    url('../img/circuit.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top: #333 solid 5px;
+  border-bottom: #333 solid 5px;
+  min-height: 180px;
+
+  .container {
+    display: grid;
+    grid-template-columns: 66% 1fr;
+    grid-gap: 2rem;
+
+    @include atSmall {
+      grid-template-columns: 100%;
+      padding: 0 4rem;
+    }
+
+    h4 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  a {
+    margin-top: 1rem;
+  }
+}

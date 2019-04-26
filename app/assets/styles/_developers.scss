@@ -1,0 +1,19 @@
+.developers {
+  display: grid;
+  grid-template-columns: 100%;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(112, 81, 176, 0.7),
+      rgba(112, 81, 176, 0.7)
+    ),
+    url('../img/code.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top: #333 solid 5px;
+  border-bottom: #333 solid 5px;
+  min-height: 180px;
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}

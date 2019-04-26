@@ -73,6 +73,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './app/index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './app/solutions.html',
+      filename: 'solutions.html'
+    }),
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
       // ./public directory is being served

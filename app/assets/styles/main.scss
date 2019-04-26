@@ -4,8 +4,10 @@
 @import './_main-header';
 @import './_showcase';
 @import './_icons';
+@import './_developers';
+@import './_language';
 @import './_about';
-
+@import './_podcast';
 .active-link {
   color: #d847f1;
   font-weight: bold;
@@ -16,4 +18,14 @@
   @include atLarge {
     width: 70%;
   }
+}
+
+.carousel-item {
+  p {
+    font-size: 20px !important;
+  }
+}
+
+em {
+  font-weight: bold;
 }

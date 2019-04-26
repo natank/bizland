@@ -1,0 +1,9 @@
+.language {
+  &__img {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+}
