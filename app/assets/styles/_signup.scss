@@ -1,0 +1,13 @@
+.signup {
+  .container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    @include atMedium {
+      grid-template-columns: 100%;
+      grid-gap: 0rem;
+    }
+  }
+}
