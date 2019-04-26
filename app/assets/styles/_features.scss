@@ -1,0 +1,21 @@
+.features {
+  text-align: center;
+  h5 {
+    min-height: 3.5rem;
+  }
+  @include atSmall {
+    text-align: left;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include atMedium {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include atSmall {
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+    }
+    grid-gap: 2rem;
+  }
+}

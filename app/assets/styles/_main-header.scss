@@ -4,4 +4,11 @@
   background-position: center;
   min-height: 600px;
   color: #fff;
+
+  &--inner {
+    min-height: 350px;
+    .showcase {
+      padding-top: 50px;
+    }
+  }
 }

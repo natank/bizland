@@ -14,4 +14,17 @@
       }
     }
   }
+  &--solutions {
+    .container {
+      width: 100%;
+
+      @include atMedium {
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+      }
+      @include atSmall {
+        grid-template-columns: 100%;
+      }
+    }
+  }
 }

@@ -8,6 +8,7 @@
 @import './_language';
 @import './_about';
 @import './_podcast';
+@import './_features';
 .active-link {
   color: #d847f1;
   font-weight: bold;
@@ -28,4 +29,10 @@
 
 em {
   font-weight: bold;
+}
+
+.tabs {
+  .indicator {
+    background-color: #6a1b9a !important;
+  }
 }
