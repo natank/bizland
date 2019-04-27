@@ -62,6 +62,10 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: ['file-loader']
+      },
+      {
+        test: /\.pug$/,
+        use: ['pug-loader']
       }
     ]
   },
@@ -70,16 +74,24 @@ module.exports = {
       filename: '[name].[hash].css'
     }),
     new CleanWebpackPlugin(),
+    // new HtmlWebpackPlugin({
+    //   template: './app/index.html'
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: './app/solutions.html',
+    //   filename: 'solutions.html'
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: './app/signup.html',
+    //   filename: 'signup.html'
+    // }),
+
     new HtmlWebpackPlugin({
-      template: './app/index.html'
+      template: './app/index.pug'
     }),
     new HtmlWebpackPlugin({
-      template: './app/solutions.html',
+      template: './app/solutions.pug',
       filename: 'solutions.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/signup.html',
-      filename: 'signup.html'
     }),
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
