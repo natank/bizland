@@ -74,17 +74,6 @@ module.exports = {
       filename: '[name].[hash].css'
     }),
     new CleanWebpackPlugin(),
-    // new HtmlWebpackPlugin({
-    //   template: './app/index.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: './app/solutions.html',
-    //   filename: 'solutions.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: './app/signup.html',
-    //   filename: 'signup.html'
-    // }),
 
     new HtmlWebpackPlugin({
       template: './app/index.pug'
@@ -92,6 +81,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './app/solutions.pug',
       filename: 'solutions.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './app/signup.pug',
+      filename: 'signup.html'
     }),
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
