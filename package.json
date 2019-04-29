@@ -1,5 +1,5 @@
 {
-  "name": "Travelville",
+  "name": "Madmin",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/natank/travelville.git"
+    "url": "git+https://github.com/natank/madmin.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/natank/travelville/issues"
+    "url": "https://github.com/natank/madmin/issues"
   },
-  "homepage": "https://github.com/natank/travelville#readme",
+  "homepage": "https://github.com/natank/madmin#readme",
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",

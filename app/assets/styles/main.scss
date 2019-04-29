@@ -1,15 +1,11 @@
+// Vendors
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i');
 @import 'materialize-css/sass/materialize.scss';
+
+// mixins
 @import './_mixins';
-@import './_main-header';
-@import './_showcase';
-@import './_icons';
-@import './_developers';
-@import './_language';
-@import './_about';
-@import './_podcast';
-@import './_features';
-@import './_signup';
+
+// base
 .active-link {
   color: #d847f1;
   font-weight: bold;
@@ -42,3 +38,5 @@ em {
   display: block;
   width: 100%;
 }
+
+// Project files
