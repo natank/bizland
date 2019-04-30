@@ -1,0 +1,41 @@
+nav.blue.darken-2
+  .container
+    .nav-wrapper
+      a.brand-logo(href='index.html') Madmin
+      a.sidenav-trigger.show-on-large.right(href='#', data-target='mobile-nav')
+        i.material-icons menu
+      ul.right.hide-on-med-and-down
+        li
+          a.active-link(href='index.html') Dashboard
+        li
+          a(href='posts.html') Posts
+        li
+          a(href='categories.html') Categories
+        li
+          a(href='comments.html') Comments
+        li
+          a(href='users.html') Users
+// Side nav 
+ul.sidenav#mobile-nav
+  li
+    .user-view
+      .background
+        img(src=require('../../img/ocean.jpg'), alt='')
+      a(href='#')
+        img.circle(src=require('../../img/person1.jpg'), alt='')
+  li
+    a(href='index.html')
+      i.fa.fa-home.grey-text.text-darken-4
+      | Home
+  li
+    a(href='solutions.html')
+      i.fa.fa-cog.grey-text.text-darken-4
+      | Solutions
+  li
+    a(href='signup.html')
+      i.fa.fa-users.grey-text.text-darken-4
+      | Sign Up
+  li
+    .divider
+  li
+    a.btn.purple(href='#') Login
