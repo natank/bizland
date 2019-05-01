@@ -15,7 +15,7 @@ nav.blue.darken-2
           a(href='comments.html') Comments
         li
           a(href='users.html') Users
-// Side nav 
+// Mobile nav 
 ul.sidenav#mobile-nav
   li
     .user-view
@@ -23,19 +23,24 @@ ul.sidenav#mobile-nav
         img(src=require('../../img/ocean.jpg'), alt='')
       a(href='#')
         img.circle(src=require('../../img/person1.jpg'), alt='')
+      a(href='#')
+        span.name.white-text John Doe
+      a(href="#").email.white-text jdoe@gmail.com
   li
-    a(href='index.html')
-      i.fa.fa-home.grey-text.text-darken-4
-      | Home
+    a(href='index.html') 
+      i.material-icons dashboard
+      | Dashboard
   li
-    a(href='solutions.html')
-      i.fa.fa-cog.grey-text.text-darken-4
-      | Solutions
+    a(href='posts.html') Posts
   li
-    a(href='signup.html')
-      i.fa.fa-users.grey-text.text-darken-4
-      | Sign Up
+    a(href='categories.html') Categories
   li
-    .divider
+    a(href='comments.html') Comments
+  li 
+    a(href='users.html') Users
   li
-    a.btn.purple(href='#') Login
+    div.divider
+  li 
+    a.subheader Account Controls
+  li
+    a(href="login.html").waves-effect logout

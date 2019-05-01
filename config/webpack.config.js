@@ -78,14 +78,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './app/index.pug'
     }),
-    new HtmlWebpackPlugin({
-      template: './app/solutions.pug',
-      filename: 'solutions.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/signup.pug',
-      filename: 'signup.html'
-    }),
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
       // ./public directory is being served
