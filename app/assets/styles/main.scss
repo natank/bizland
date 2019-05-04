@@ -14,7 +14,7 @@
 .container--wide-on-medium-and-up {
   width: 100%;
   @include atLarge {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -39,4 +39,11 @@ em {
   width: 100%;
 }
 
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 // Project files
+@import './_stats';
