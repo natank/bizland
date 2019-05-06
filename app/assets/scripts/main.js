@@ -4,6 +4,7 @@ import 'materialize-css';
 import './materializeSetup';
 import './chart';
 
+
 // Counter
 
 $('.section').hide();

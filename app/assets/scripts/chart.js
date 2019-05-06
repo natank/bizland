@@ -1,4 +1,8 @@
 import Chart from 'chart.js';
+
+function renderChart() {
+  
+}
 document.addEventListener('DOMContentLoaded', function() {
   var ctx = document.getElementById('myChart');
   var options = {
@@ -6,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
       line: {
         tension: 0
       }
+    },
+    animation:{ 
+
     }
   };
   var myChart = new Chart(ctx, {
