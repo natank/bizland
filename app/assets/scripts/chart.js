@@ -1,18 +1,13 @@
 import Chart from 'chart.js';
 
 function renderChart() {
-  
-}
-document.addEventListener('DOMContentLoaded', function() {
-  var ctx = document.getElementById('myChart');
+  var ctx = document.getElementById('myChart').getContext('2d');
+  console.log(ctx);
   var options = {
     elements: {
       line: {
         tension: 0
       }
-    },
-    animation:{ 
-
     }
   };
   var myChart = new Chart(ctx, {
@@ -32,4 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     options: options
   });
+}
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(renderChart, 2000);
 });

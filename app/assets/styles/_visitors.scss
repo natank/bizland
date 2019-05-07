@@ -1,5 +1,15 @@
 .visitors {
-    display: grid;
-    grid-template-columns: 8fr 4fr;
-    grid-gap: 2rem;
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  grid-gap: 2rem;
 }
+
+.chartContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  align-content: center;
+}
+
+// .latest-comments {
+//   background: rgb(255, 255, 255);
+// }
