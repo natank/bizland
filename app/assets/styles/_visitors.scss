@@ -1,6 +1,10 @@
 .visitors {
   display: grid;
+
   grid-template-columns: 8fr 4fr;
+  @include atMedium {
+    grid-template-columns: 100%;
+  }
   grid-gap: 2rem;
   padding: 2rem;
 }
@@ -10,7 +14,3 @@
   grid-template-columns: 100%;
   align-content: center;
 }
-
-// .latest-comments {
-//   background: rgb(255, 255, 255);
-// }
