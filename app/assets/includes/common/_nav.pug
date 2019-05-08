@@ -1,20 +1,20 @@
 nav.blue.darken-2
   .container
     .nav-wrapper
-      a.brand-logo(href='index.html') Madmin
+      a.brand-logo(href='index.html') Madmin 
       a.sidenav-trigger.show-on-large.right(href='#', data-target='mobile-nav')
         i.material-icons menu
       ul.right.hide-on-med-and-down
         li
-          a.active-link(href='index.html') Dashboard
+          a(class=(page==="Home" ? "active-link" : "undefined") href='index.html') Dashboard
         li
-          a(href='posts.html') Posts
+          a(class=(page==="Posts" ? "active-link" : "undefined") href='posts.html') Posts
         li
-          a(href='categories.html') Categories
+          a(class=(page==="Categories" ? "active-link" : "undefined") href='Categories.html') Categories
         li
-          a(href='comments.html') Comments
+          a(class=(page==="Comments" ? "active-link" : "undefined") href='comments.html') Comments
         li
-          a(href='users.html') Users
+          a(class=(page==="Users" ? "active-link" : "undefined") href='users.html') Users
 // Mobile nav 
 ul.sidenav#mobile-nav
   li

@@ -76,8 +76,47 @@ module.exports = {
     new CleanWebpackPlugin(),
 
     new HtmlWebpackPlugin({
-      template: './app/index.pug'
+      template: './app/index.pug',
+      templateParameters: {
+        page: 'Home'
+      }
     }),
+    new HtmlWebpackPlugin({
+      template: './app/posts.pug',
+      filename: 'posts.html',
+      templateParameters: {
+        page: 'Posts'
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: './app/users.pug',
+      filename: 'users.html',
+      templateParameters: {
+        page: 'Users'
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: './app/comments.pug',
+      filename: 'comments.html',
+      templateParameters: {
+        page: 'Comments'
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: './app/login.pug',
+      filename: 'login.html',
+      templateParameters: {
+        page: 'Login'
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: './app/categories.pug',
+      filename: 'categories.html',
+      templateParameters: {
+        page: 'Categories'
+      }
+    }),
+
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
       // ./public directory is being served
