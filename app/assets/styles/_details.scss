@@ -1,0 +1,25 @@
+.details {
+  .card-content {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    @include atSmall {
+      grid-template-columns: 100%;
+    }
+    .card-title {
+      text-align: left;
+      @include atSmall {
+        text-align: center;
+      }
+    }
+  }
+  form {
+    grid-column: 1 / -1;
+  }
+  .card-action {
+    grid-column: 1 / -1;
+    button {
+      margin: 2px;
+    }
+  }
+}

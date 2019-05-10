@@ -1,0 +1,29 @@
+//- Section: details
+section.section.details.grey.lighten-4
+      .container
+        .card
+          .card-content
+            .card-title Post Details
+            .picture.center
+              img.responsive-img.circle(src=require("../../img/person1.jpg"), alt="person1 img", style="width: 40px; margin-left:10px;")
+              p Posted By John Doe
+              p On Jan, 12, 2018
+
+            form(action="")
+              .input-field
+                input#title(type="text" value="Post One")
+                label(for="title") Title
+              .input-field
+                select
+                  option(value="").disabled.selected Select option
+                  option(value="1" selected) Web Development
+                  option(value="2") Graphic Design
+                  option(value="3") Tech Gadgets
+                  option(value="4") Other
+                label(for="") Category
+              .input-field
+                textarea(name='body')#body.materialize-textarea This is the content
+            .card-action
+              button.btn.green Save
+              button.btn.red Delete
+            

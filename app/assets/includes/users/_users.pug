@@ -1,0 +1,66 @@
+//- Section: Users
+section.section.users.grey.lighten-4
+      .container
+        .card
+          .card-content
+            span.card-title Users
+            table.striped
+              thead
+                tr
+                  th
+                  th Name
+                  th Email
+                  th Registered
+                  th
+              tbody
+                tr
+                  td(width="70")
+                    img.responsive-img.circle(src=require("../../img/person1.jpg"), alt="person1 img", style="width: 40px; margin-left:10px;")
+                  td John Doe
+                  td jdoe@gmail.com
+                  td Jan, 1 2018
+                  td 
+                    a.btn.blue.lighten-2(href="details.html") Details
+                tr
+                  td(width="70")
+                    img.responsive-img.circle(src=require("../../img/person2.jpg"), alt="person2 img", style="width: 40px; margin-left:10px;")
+                  td Larry Watters
+                  td lwatters@gmail.com
+                  td Jan, 3 2018
+                  td 
+                    a.btn.blue.lighten-2(href="details.html") Details
+                tr
+                  td(width="70")
+                    img.responsive-img.circle(src=require("../../img/person3.jpg"), alt="person3 img", style="width: 40px; margin-left:10px;")
+                  td Susan Williams
+                  td susan@gmail.com
+                  td Jan, 5 2018
+                  td 
+                    a.btn.blue.lighten-2(href="details.html") Details
+                tr
+                  td(width="70")
+                    img.responsive-img.circle(src=require("../../img/person4.jpg"), alt="person4 img", style="width: 40px; margin-left:10px;")
+                  td Jeff Burke
+                  td jburke@gmail.com
+                  td Jan, 10 2018
+                  td 
+                    a.btn.blue.lighten-2(href="details.html") Details
+
+            .card-action
+            ul.pagination
+              li.disabled
+                a(href='#!').blue-text
+                  i.material-icons chevron_left
+              li.active
+                a(href='#!').white-text 1
+              li.waves-effect
+                a(href='#!').blue-text 2
+              li.waves-effect
+                a(href='#!').blue-text 3
+              li.waves-effect
+                a(href='#!').blue-text 4
+              li.waves-effect
+                a(href='#!').blue-text 5
+              li.waves-effect
+                a(href='#!').blue-text
+                  i.material-icons chevron_right

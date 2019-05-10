@@ -1,0 +1,19 @@
+#post-modal.modal
+  .modal-content
+    h4 Add Post
+      form(action="")
+        .input-field
+          input#title(type="text")
+          label(for="title") Title
+        .input-field
+          select
+            option(value="").disabled.selected Select option
+            option(value="1") Web Development
+            option(value="2") Graphic Design
+            option(value="3") Tech Gadgets
+            option(value="4") Other
+          label(for="") Category
+        .input-field
+          textarea(name='body')#body.materialize-textarea
+      .modal-footer
+        a(href="#!").modal-action.modal-close.btn.blue.white-text Submit

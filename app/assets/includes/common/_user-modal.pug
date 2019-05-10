@@ -1,0 +1,19 @@
+#user-modal.modal
+  .modal-content
+    h4 Add User
+      form(action="")
+        .input-field
+          input#name(type="text")
+          label(for="name") Name
+        .input-field
+          input#email(type="text")
+          label(for="email") Email
+        .input-field
+          input#password(type="password")
+          label(for="password") Password
+        .input-field
+          input#password2(type="password")
+          label(for="password2") Confirm Password
+
+      .modal-footer
+        a(href="#!").modal-action.modal-close.btn.blue.white-text Submit

@@ -13,56 +13,10 @@
       a.btn-floating.blue.modal-trigger(href="#user-modal")
         i.material-icons supervisor_account
 
-//- Add Post Modal
-#post-modal.modal
-  .modal-content
-    h4 Add Post
-      form(action="")
-        .input-field
-          input#title(type="text")
-          label(for="title") Title
-        .input-field
-          select
-            option(value="").disabled.selected Select option
-            option(value="1") Web Development
-            option(value="2") Graphic Design
-            option(value="3") Tech Gadgets
-            option(value="4") Other
-          label(for="") Category
-        .input-field
-          textarea(name='body')#body.materialize-textarea
-          label(for="body") Body
-      .modal-footer
-        a(href="#!").modal-action.modal-close.btn.blue.white-text Submit
-//- Add Category Modal
-#category-modal.modal
-  .modal-content
-    h4 Add Category
-      form(action="")
-        .input-field
-          input#title(type="text")
-          label(for="title") Title
-      .modal-footer
-        a(href="#!").modal-action.modal-close.btn.blue.white-text Submit
-//- Add User Modal
-#user-modal.modal
-  .modal-content
-    h4 Add User
-      form(action="")
-        .input-field
-          input#name(type="text")
-          label(for="name") Name
-        .input-field
-          input#email(type="text")
-          label(for="email") Email
-        .input-field
-          input#password(type="password")
-          label(for="password") Password
-        .input-field
-          input#password2(type="password")
-          label(for="password2") Confirm Password
-
-      .modal-footer
-        a(href="#!").modal-action.modal-close.btn.blue.white-text Submit
-
+  //- Add Post Modal
+  include ../common/_post-modal.pug
+  //- Add Category Modal
+  include ../common/_category-modal.pug
+  //- Add User Modal
+  include ../common/_user-modal.pug
 

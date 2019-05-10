@@ -3,8 +3,11 @@ html(lang="en")
   include assets/includes/common/_head.html
   body.container.container--wide-on-medium-and-up.grey.lighten-4
     include assets/includes/common/_header.pug
-
+    include assets/includes/posts/_posts.pug
     footer.section.blue.darken-2.white-text.center
       p Madmin Panel Copyright &copy; 2018
-    include assets/includes/posts/_floating-button.pug
-    include assets/includes/home/_preloader.pug
+    .fixed-action-btn
+      a.btn-floating.btn-large.red.modal-trigger(href="#post-modal")
+        i.large.material-icons add
+    //- Add Post Modal
+    include ./assets/includes/common/_post-modal.pug

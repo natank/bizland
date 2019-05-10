@@ -1,8 +1,9 @@
 import '../styles/main.scss';
 import $ from 'jquery';
 import 'materialize-css';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import './classicEditorSetup';
 import './materializeSetup';
+import './fontAwesomeSetup';
 import './chart';
 
 // Counter
@@ -95,13 +96,4 @@ document.addEventListener('DOMContentLoaded', function() {
     M.toast({ html: 'Todo Removed' });
     ev.preventDefault();
   }
-
-  // Initialize editor
-  ClassicEditor.create(document.querySelector('#body'))
-    .then(editor => {
-      console.log(editor);
-    })
-    .catch(error => {
-      console.error(error);
-    });
 });

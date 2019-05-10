@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i');
+@import './_colors';
+@import 'materialize-css/sass/materialize.scss';
+
+// mixins
+@import './_mixins';
+
+.login {
+  .container {
+    display: grid;
+    grid-gap: 2rem;
+    width: 80%;
+    grid-template-columns: 100%;
+  }
+}
