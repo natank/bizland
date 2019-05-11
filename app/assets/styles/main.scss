@@ -6,64 +6,7 @@
 // mixins
 @import './_mixins';
 
-// base
-.active-link {
-  color: #d847f1;
-  font-weight: bold;
-}
-
-.container--wide-on-medium-and-up {
-  width: 100%;
-  @include atLarge {
-    width: 100%;
-  }
-}
-
-.carousel-item {
-  p {
-    font-size: 20px !important;
-  }
-}
-
-em {
-  font-weight: bold;
-}
-
-.tabs {
-  .indicator {
-    background-color: #6a1b9a !important;
-  }
-}
-
-.btn-extend {
-  display: block;
-  width: 100%;
-}
-
-.btn-extended {
-  display: block;
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
-}
-
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-table.striped > tbody > tr:nth-child(odd) {
-  background-color: rgba(170, 213, 213, 0.5);
-}
-
-// .pagination li.active {
-//   background-color: $x;
-// }
-
 // Project files
-@import './_stats';
-@import './_visitors';
-@import './_todos';
-@import './_login';
-@import './_details';
+@import './_base';
+@import './_showcase';
+@import './_main-header';

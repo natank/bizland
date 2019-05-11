@@ -1,0 +1,22 @@
+.main-header {
+  background: linear-gradient(rgba(63, 57, 77, 0.7), rgba(63, 57, 77, 0.7)),
+    url(../img/showcase.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  position: relative;
+}
+
+.main-header .showcase {
+  padding-top: 110px;
+}
+
+.transparency {
+  opacity: 0;
+}
+
+.fade-ease {
+  transition: opacity 1s ease-in-out;
+}

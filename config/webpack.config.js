@@ -7,11 +7,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: './app/assets/scripts/main.js',
-    posts: './app/assets/scripts/posts.js',
-    categories: './app/assets/scripts/categories.js',
-    comments: './app/assets/scripts/categories.js',
-    login: './app/assets/scripts/login.js'
+    main: './app/assets/scripts/main.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -82,59 +78,7 @@ module.exports = {
     new CleanWebpackPlugin(),
 
     new HtmlWebpackPlugin({
-      template: './app/index.pug',
-      templateParameters: {
-        page: 'Home'
-      },
-      chunks: ['main']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/posts.pug',
-      filename: 'posts.html',
-      templateParameters: {
-        page: 'Posts'
-      },
-      chunks: ['posts']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/users.pug',
-      filename: 'users.html',
-      templateParameters: {
-        page: 'Users'
-      },
-      chunks: ['categories']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/comments.pug',
-      filename: 'comments.html',
-      templateParameters: {
-        page: 'Comments'
-      },
-      chunks: ['comments']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/login.pug',
-      filename: 'login.html',
-      templateParameters: {
-        page: 'Login'
-      },
-      chunks: ['login']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/categories.pug',
-      filename: 'categories.html',
-      templateParameters: {
-        page: 'Categories'
-      },
-      chunks: ['categories']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/details.pug',
-      filename: 'details.html',
-      templateParameters: {
-        page: 'Details'
-      },
-      chunks: ['posts']
+      template: './app/index.pug'
     }),
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
