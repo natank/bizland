@@ -6,4 +6,7 @@
     transform: translateX(-50%);
     opacity: 0.5;
   }
+  @include atSmall {
+    height: 50vh;
+  }
 }

@@ -1,0 +1,17 @@
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 0 !important;
+  @include atLarge {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include atSmall {
+    grid-template-columns: 100%;
+  }
+  &__box {
+    padding: 3rem 0.8rem !important;
+    h4 {
+      padding-bottom: 2rem;
+    }
+  }
+}
