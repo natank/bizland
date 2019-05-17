@@ -1,0 +1,23 @@
+//- Section: Contact
+section.section.contact.center.scrollspy#contact
+  
+  .container
+    .contact__map
+      #googlemap
+    .contact__details.card-panel.z-depth-5
+      h4 Contact Us
+      .input-field
+        input#name(type=text, placeholder="Name")
+        label(for="name") Name
+      .input-field
+        input#email(placeholder="Email", type=email)
+        label(for="email") Email
+      .input-field
+        input#phone(placeholder="Phone Number", type=text)
+        label(for="phone") Phone
+      .input-field
+        textarea#message.materialize-textarea(name="", cols="30", rows="10", placeholder="Message")
+        label(for="message") Message
+      input(type="submit", value="Submit").btn.blue-grey
+        
+

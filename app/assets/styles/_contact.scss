@@ -1,0 +1,45 @@
+.contact {
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    @include atSmall {
+      flex-direction: column-reverse;
+    }
+    padding: 2rem;
+    @include atSmall {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(2, 1fr);
+    }
+    @include atSmall {
+      grid-row: 2/3;
+    }
+  }
+  &__map {
+    position: absolute;
+    z-index: 0;
+    @include atSmall {
+      position: static;
+      height: 200px;
+      width: 100vw;
+    }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    #googlemap {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__details {
+    position: relative;
+    @include atSmall {
+      width: 90vw;
+    }
+  }
+}
