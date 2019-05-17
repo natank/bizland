@@ -5668,6 +5668,8 @@ footer .footer__back-top div,
       footer .footer__back-top div,
       footer .footer__back-top p {
         margin-top: -0.4rem; } }
+footer .footer__back-top div {
+    margin-top: -0.6rem; }
 .contact .container {
   position: relative;
   display: flex;
