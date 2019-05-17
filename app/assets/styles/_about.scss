@@ -12,4 +12,9 @@
       grid-column: 1/-1;
     }
   }
+  &__services {
+    .material-icons {
+      color: green;
+    }
+  }
 }
